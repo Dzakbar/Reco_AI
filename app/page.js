@@ -122,10 +122,9 @@ export default function Home() {
               className="h-14 w-14 overflow-hidden rounded-2xl border-2 border-white bg-white shadow-md relative"
             >
               <img
-                src="/reco-mascot.png"
+                src="/reco-logo.png"
                 alt="Reco AI logo"
-                className="h-full w-full object-cover scale-125"
-                style={{ objectPosition: "56% 52%" }}
+                className="h-full w-full object-contain p-1"
               />
             </motion.div>
             <div>
@@ -190,9 +189,10 @@ export default function Home() {
                 <motion.img
                   animate={{ y: [-10, 10, -10] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  src="/reco-logo.png"
+                  src="/reco-mascot.png"
                   alt="Reco, AI assistant untuk analisis barang bekas"
-                  className="h-full w-full object-contain p-4 origin-bottom"
+                  className="h-full w-full scale-125 object-cover origin-bottom"
+                  style={{ objectPosition: "54% 60%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#cceff4] via-transparent to-transparent opacity-60"></div>
               </div>
