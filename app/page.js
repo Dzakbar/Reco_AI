@@ -122,10 +122,9 @@ export default function Home() {
               className="h-14 w-14 overflow-hidden rounded-2xl border-2 border-white bg-white shadow-md relative"
             >
               <img
-                src="/reco-mascot.png"
-                alt="Reco AI mascot"
-                className="h-full w-full scale-125 object-cover"
-                style={{ objectPosition: "56% 52%" }}
+                src="/reco-logo.png"
+                alt="Reco AI logo"
+                className="h-full w-full object-contain p-1"
               />
             </motion.div>
             <div>
@@ -190,10 +189,9 @@ export default function Home() {
                 <motion.img
                   animate={{ y: [-10, 10, -10] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  src="/reco-mascot.png"
+                  src="/reco-logo.png"
                   alt="Reco, AI assistant untuk analisis barang bekas"
-                  className="h-full w-full scale-125 object-cover origin-bottom"
-                  style={{ objectPosition: "54% 60%" }}
+                  className="h-full w-full object-contain p-4 origin-bottom"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#cceff4] via-transparent to-transparent opacity-60"></div>
               </div>
@@ -277,15 +275,14 @@ export default function Home() {
                   className="glass rounded-3xl p-8 shadow-soft relative overflow-hidden"
                 >
                   <div className="absolute -right-10 -bottom-10 opacity-5 pointer-events-none">
-                    <img src="/reco-mascot.png" alt="" className="w-64 h-64 object-cover rounded-full" />
+                    <img src="/reco-logo.png" alt="" className="w-64 h-64 object-contain" />
                   </div>
                   <div className="flex gap-5 relative z-10">
-                    <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-leaf-200 bg-leaf-50 shadow-inner">
+                    <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-leaf-200 bg-white p-2 shadow-inner flex items-center justify-center">
                       <img
-                        src="/reco-mascot.png"
+                        src="/reco-logo.png"
                         alt="Reco AI"
-                        className="h-full w-full scale-125 object-cover"
-                        style={{ objectPosition: "56% 52%" }}
+                        className="h-full w-full object-contain"
                       />
                     </div>
                     <div className="pt-2">
