@@ -122,9 +122,10 @@ export default function Home() {
               className="h-14 w-14 overflow-hidden rounded-2xl border-2 border-white bg-white shadow-md relative"
             >
               <img
-                src="/reco-logo.png"
+                src="/reco-mascot.png"
                 alt="Reco AI logo"
-                className="h-full w-full object-contain p-1"
+                className="h-full w-full object-cover scale-125"
+                style={{ objectPosition: "56% 52%" }}
               />
             </motion.div>
             <div>
@@ -150,7 +151,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 rounded-full bg-leaf-100/50 px-3 py-1 mb-4 border border-leaf-200">
               <span className="flex h-2 w-2 rounded-full bg-leaf-500 animate-pulse"></span>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-leaf-700">
-                AI Barang Bekas Analyzer
+                Meet Reco — your intelligent resale companion
               </p>
             </div>
             <h1 className="text-5xl font-extrabold tracking-tight text-ink sm:text-6xl sm:leading-[1.1]">
@@ -275,14 +276,15 @@ export default function Home() {
                   className="glass rounded-3xl p-8 shadow-soft relative overflow-hidden"
                 >
                   <div className="absolute -right-10 -bottom-10 opacity-5 pointer-events-none">
-                    <img src="/reco-logo.png" alt="" className="w-64 h-64 object-contain" />
+                    <img src="/reco-mascot.png" alt="" className="w-64 h-64 object-cover rounded-full" />
                   </div>
                   <div className="flex gap-5 relative z-10">
-                    <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-leaf-200 bg-white p-2 shadow-inner flex items-center justify-center">
+                    <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-leaf-200 bg-leaf-50 p-0 shadow-inner flex items-center justify-center">
                       <img
-                        src="/reco-logo.png"
+                        src="/reco-mascot.png"
                         alt="Reco AI"
-                        className="h-full w-full object-contain"
+                        className="h-full w-full object-cover scale-125"
+                        style={{ objectPosition: "56% 52%" }}
                       />
                     </div>
                     <div className="pt-2">
