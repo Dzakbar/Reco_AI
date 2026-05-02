@@ -21,12 +21,6 @@ export default function UploadBox({
   const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current && stream) {
-      videoRef.current.srcObject = stream;
-    }
-  }, [stream]);
-
-  useEffect(() => {
     return () => {
       if (stream) {
         stream.getTracks().forEach((track) => track.stop());
@@ -107,7 +101,12 @@ export default function UploadBox({
               className="w-full relative flex flex-col items-center"
             >
               <video
-                ref={videoRef}
+                ref={(el) => {
+                  videoRef.current = el;
+                  if (el && stream && el.srcObject !== stream) {
+                    el.srcObject = stream;
+                  }
+                }}
                 autoPlay
                 playsInline
                 muted
